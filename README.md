@@ -1,1 +1,1 @@
-Full-stack developer Deividas Strole page
+Deividas Strole's Full-stack Developer Profile
