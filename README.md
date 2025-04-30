@@ -1,1 +1,1 @@
-Deividas Strole page
+Full-stack developer Deividas Strole page
