@@ -319,6 +319,25 @@
             font-size: 60px;
             color: #888;
         }
+        .ex-card:hover .card {
+          transform: rotateY(180deg) translateX(100%);
+        }
+        .ex-card {
+          perspective: 300px;
+        }
+        .card {
+          transition: 0.7s;
+          transform-style: preserve-3d;
+          transform-origin: right;
+          position: relative;
+        }
+        .card-front, .card-back {
+         backface-visibility: hidden;
+         position: absolute;
+        }
+        .card-back {
+          transform: rotateY(180deg) translateZ(1px);
+        }
         h1 {
             margin: 0;
             font-size: 2.5rem;
@@ -409,7 +428,13 @@
 </head>
 <body>
     <header>
-        <div class="profile-pic">DS</div>
+<!--         <div class="profile-pic">DS</div> -->
+        <div class="ex-card">
+           <div class="card">
+               <div class="card-front">D</div>
+               <div class="card-back">S</div>
+          </div>
+        </div> 
         <h1>Deividas Strole</h1>
         <p class="subtitle">Full-Stack Developer</p>
     </header>
